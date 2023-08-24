@@ -7,6 +7,7 @@ function App() {
 
   const handleDrop = e => {
     e.preventDefault();
+    setFiles([...files, e.dataTransfer.files])
   }
 
   return (
